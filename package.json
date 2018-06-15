@@ -11,12 +11,18 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.0.0",
-        "popper.js": "^1.12",
+        "bootstrap": "^4.1.1",
         "cross-env": "^5.1",
-        "jquery": "^3.2",
+        "jquery": "^3.3.1",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4",
+        "popper.js": "^1.12",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "holder": "0.0.0",
+        "holderjs": "^2.9.4",
+        "jsdom": "^11.11.0",
+        "popper": "^1.0.1"
     }
 }
