@@ -2,6 +2,8 @@
 
 @section ('content')
 
-<h3>Teste</h3>
+<div class="container mt-3">
+	<h3>{{ $itemSell }}</h3>
+</div>
 
 @endsection
