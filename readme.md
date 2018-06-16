@@ -59,7 +59,7 @@ docker-compose exec postgres createdb -U default alabamaotsite
 ## Migrate do DB
 docker-compose exec --user=laradock workspace php artisan migrate
 
-#Passos da criação do de um Projeto Laravel 5.6 no Laradock 7
+# Passos da criação do de um Projeto Laravel 5.6 no Laradock 7
 
 ## Laravel 5.6
 git clone --recurse-submodules https://github.com/laravel/laravel.git alabamaot-site
