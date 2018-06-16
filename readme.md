@@ -9,7 +9,7 @@ git clone --recurse-submodules https://github.com/Acquati/alabamaot-site.git
 ### Criando o .env do Laravel
 #### Áreas que precisam ser configuaradas:
 
-'''terminal
+'''shell
 APP_URL=http://localhost:8082
 
 DB_CONNECTION=pgsql
