@@ -1,25 +1,6 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
 ## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects.
 
 ## Learning Laravel
 
@@ -27,35 +8,84 @@ Laravel has the most extensive and thorough [documentation](https://laravel.com/
 
 If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
+Laravel 5.6
+git clone --recurse-submodules https://github.com/laravel/laravel.git alabamaot-site
+cd alabamaot-site
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+Remoção do .git do laravel
+rm -rf .git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
+Adicionando repositório no GitHub
+git init
+git add .
+git commit -m "Adicionando Laravel 5.6"
+git remote add origin https://github.com/Acquati/alabamaot-site.git
+ggpull
+git push -u origin master
 
-## Contributing
+Adicionando .gitignore
+git add .
+git commit -m "Adicionando .gitignore"
+ggpush
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Laradock 7
+git submodule add https://github.com/laradock/laradock.git
+cd laradock
 
-## Security Vulnerabilities
+Ecertando o .env do laravel:
+Áreas que precisam ser configuaradas:
+APP_URL=http://localhost:8082
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+DB_CONNECTION=pgsql
+DB_HOST=172.17.0.1
+DB_PORT=5432
+DB_DATABASE=shanti
+DB_USERNAME=default
+DB_PASSWORD=secret
 
-## License
+Ecertando o .env do laradock:
+Áreas que precisam ser configuaradas:
+Data Path
+# Choose storage path on your machine. For all storage systems.
+DATA_SAVE_PATH=~/.laradock/alabamaotsite
+PHP_FPM
+PHP_FPM_INSTALL_PGSQL=true
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+NGINX
+NGINX_HOST_HTTP_PORT=8082
+NGINX_HOST_HTTPS_PORT=443
+NGINX_HOST_LOG_PATH=./logs/nginx/
+NGINX_SITES_PATH=./nginx/sites/
+NGINX_PHP_UPSTREAM_CONTAINER=php-fpm
+NGINX_PHP_UPSTREAM_PORT=9000
+
+
+git add .
+git commit -m "Adicionando o Laradock"
+ggpush
+
+cd laradock
+docker-compose up -d nginx php-fpm postgres
+docker-compose exec --user=laradock workspace composer install
+docker-compose exec --user=laradock workspace php artisan key:generate
+
+npm install
+
+caso de erro no pngquant
+sudo apt-get install libpng-dev
+npm install -g pngquant-bin
+
+npm install bootstrap
+npm install popper
+npm install holderjs
+npm run dev
+
+criar o db caso não crie:
+docker-compose exec postgres createdb -U default alabamaotsite
+
+docker-compose exec --user=laradock workspace php artisan migrate
+
+docker-compose exec --user=laradock workspace php artisan make:model Npc -mcr
+
+
