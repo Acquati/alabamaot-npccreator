@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="I Buy Yahchal Loot" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="149" head="132" body="94" legs="112" feet="114" addons="3" />
+
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="
+			yellow gem,2154,1000;
+			might ring,2164,250;
+			life crystal,2177,85;
+			wand of cosmic energy,2189,2000;
+			soul orb,5944,25;
+			bonebreaker,7428,10000;
+			mastermind potion,7440,500;
+			lightning pendant,7889,1500;
+			crystalline armor,8878,16000;
+			gear wheel,9690,500;
+			shockwave amulet,10221,3000;
+			gear crystal,10572,200;
+			slime mould,13758,175;
+			small ruby,2147,250;
+			energy ring,2167,100;
+			wand of inferno,2187,3000;
+			magic sulphur,5904,8000;
+			bullseye potion,7443,500;
+			magma legs,7894,11000;
+			skull staff,2436,6000;
+			mysterious voodoo skull,5669,4000;
+			hardened bone,5925,70;
+			death ring,6300,1000;
+			lump of dirt,10609,10;
+			unholy bone,11233,480;
+			pile of grave earth,12440,25;
+			safety pin,12449,120;
+			steel boots,2645,30000;
+			magma coat,7899,11000;
+			small emerald,2149,250;
+			life ring,2168,50;
+			fish fin,5895,150;
+			heavy trident,13838,2000;
+			eye of a deepling,13870,150;
+			deepling warts,15425,180;
+			deeptags,15426,290;
+			warrior's axe,15451,11000;
+			deepling ridge,15452,360;
+			warrior's shield,15453,9000;
+			small diamond,2145,300;
+			fire sword,2392,4000;
+			black shield,2529,800;
+			iron ore,5880,500;
+			white piece of cloth,5909,100;
+			red piece of cloth,5911,300;
+			yellow piece of cloth,5914,150;
+			magma amulet,7890,1500;
+			magma boots,7891,2500;
+			wand of draconia,8921,1500;
+			fiery heart,10553,375;
+			coal,13757,20;
+			wand of everblazing,18409,600;
+			blue crystal shard,18413,1500;
+			brown crystal splinter,18417,400;
+			blue crystal splinter,18418,400;
+			green crystal fragment,18421,800;
+			magma clump,18424,570;
+			blazing bone,18425,610;
+			boots of haste,2195,30000;
+			dragon necklace,2201,100;
+			crystal mace,2455,12000;
+			blue piece of cloth,5912,200;
+			shard,7290,2000;
+			queen's sceptre,7410,20000;
+			berserk potion,7439,500;
+			crystal sword,7449,600;
+			pair of earmuffs,7459,1500;
+			glacier kilt,7896,11000;
+			glacier robe,7897,11000;
+			gold ingot,9971,5000;
+			golden legs,2470,30000;
+			orichalcum pearl,5022,40;
+			cat's paw,5480,2000;
+			demonic essence,6500,1000;
+			vile axe,7388,30000;
+			butcher's axe,7412,18000;
+			terra legs,7885,11000;
+			terra boots,7886,2500;
+			shiny stone,11227,500;
+			guardian boots,11240,35000;
+			Zaoan armor,11301,14000;
+			Zaoan helmet,11302,45000;
+			Zaoan shoes,11303,5000;
+			Zaoan legs,11304,14000;
+			drakinata,11305,10000;
+			Zaoan sword,11308,30000;
+			twin hooks,11309,500;
+			Zaoan halberd,11323,500;
+			spellweaver's robe,11355,12000;
+			ghastly dragon head,11366,700;
+			undead heart,11367,200;
+			jade hat,11368,9000;
+			white pearl,2143,160;
+			black pearl,2144,280;
+			red gem,2156,1000;
+			blue gem,2158,5000;
+			giant sword,2393,17000;
+			hammer of wrath,2444,30000;
+			knight legs,2477,5000;
+			crown armor,2487,12000;
+			crusader helmet,2497,6000;
+			sapphire hammer,7437,7000;
+			spiked squelcher,7452,5000;
+			crystal of balance,9942,1000;
+			crystal of power,9980,3000;
+			wand of defiance,18390,6500;
+			glacial rod,18412,6500;
+			cyan crystal fragment,18419,800;
+			pulverized ore,18427,400;
+			cliff strider claw,18428,800;
+			vein of ore,18429,330;
+			crystal crossbow,18453,35000;
+			small sapphire,2146,250;
+			ice rapier,2396,1000;
+			strange helmet,2479,500;
+			ice cube,7441,250;
+			glacier mask,7902,2500;
+			frosty heart,10578,280;
+			crystal ring,2124,250;
+			crystal necklace,2125,400;
+			time ring,2169,100;
+			platinum amulet,2171,2500;
+			steel helmet,2457,293;
+			plate armor,2463,400;
+			knight armor,2476,5000;
+			spider silk,5879,100;
+			gemmed book,1976,100;
+			golden mug,2033,250;
+			dragon scale mail,2492,40000;
+			royal helmet,2498,30000;
+			tower shield,2528,8000;
+			dragon slayer,7402,15000
+		" />
+		<parameter key="shop_buyable" value="
+			meat,2666,3;
+			ham,2671,5;
+			dragon ham,2672,25
+		" />
+	</parameters>
+</npc>
