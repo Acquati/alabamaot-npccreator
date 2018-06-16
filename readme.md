@@ -1,5 +1,8 @@
 # NPC Creator - Alabama Open Tibia Server
 
+Criador de NPC para o [Forgotten Server](https://github.com/otland/forgottenserver).
+Ele pega o arquivo map-spawn.otbm, gera a lista de monstros e o NPC que compra os loots do mapa, com o nome dos itens, seus respectivos id e preços do [Tibia Wiki](https://www.tibiawiki.com.br/).
+
 ## [AlabamaOT.com](http://www.alabamaot.com/)
 
 ![alt text](https://github.com/Acquati/alabamaot-site/blob/master/public/images/npc-creator.png)
