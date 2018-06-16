@@ -2,13 +2,14 @@
 
 ## Instalação
 
-## Clone do projeto
+### Clone do projeto
 
 git clone --recurse-submodules https://github.com/Acquati/alabamaot-site.git
 
-## Criando o .env do Laravel
-### Áreas que precisam ser configuaradas:
+### Criando o .env do Laravel
+#### Áreas que precisam ser configuaradas:
 
+'''terminal
 APP_URL=http://localhost:8082
 
 DB_CONNECTION=pgsql
@@ -17,6 +18,7 @@ DB_PORT=5432
 DB_DATABASE=shanti
 DB_USERNAME=default
 DB_PASSWORD=secret
+'''
 
 ## Criando o .env do Laradock
 ### Áreas que precisam ser configuaradas:
