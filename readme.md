@@ -14,7 +14,7 @@ git clone --recurse-submodules https://github.com/Acquati/alabamaot-site.git
 
 2. **Criando o .env do Laravel**
 
-Áreas que precisam ser configuaradas:
+ Áreas que precisam ser configuradas:
 ```
 APP_URL=http://localhost:8082
 ```
@@ -29,7 +29,7 @@ DB_PASSWORD=secret
 
 3. **Criando o .env do Laradock**
 
-Áreas que precisam ser configuaradas:
+ Áreas que precisam ser configuradas:
 ```
 Data Path
 Choose storage path on your machine. For all storage systems.
@@ -61,7 +61,7 @@ docker-compose exec --user=laradock workspace php artisan key:generate
 ```
 docker-compose exec --user=laradock workspace php artisan migrate
 ```
-Como criar o DB Manualmente caso de erro na migrate:
+ Como criar o DB Manualmente caso de erro na migrate:
 ```
 docker-compose exec postgres createdb -U default alabamaotsite
 docker-compose exec --user=laradock workspace php artisan migrate
@@ -72,7 +72,7 @@ docker-compose exec --user=laradock workspace php artisan migrate
 ```
 npm install
 ```
-Caso de erro no pngquant
+ Caso de erro no pngquant
 ```
 sudo apt-get install libpng-dev
 npm install -g pngquant-bin
