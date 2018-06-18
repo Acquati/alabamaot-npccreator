@@ -12,7 +12,7 @@ Ele pega o arquivo map-spawn.otbm, gera a lista de monstros e o NPC que compra o
 1. **Clone do projeto**
 
 ```
-git clone --recurse-submodules https://github.com/Acquati/alabamaot-site.git
+git clone --recurse-submodules https://github.com/Acquati/alabamaot-npccreator
 ```
 
 2. **Criando o .env do Laravel**
@@ -25,7 +25,7 @@ APP_URL=http://localhost:8082
 DB_CONNECTION=pgsql
 DB_HOST=172.17.0.1
 DB_PORT=5432
-DB_DATABASE=shanti
+DB_DATABASE=alabamanpc
 DB_USERNAME=default
 DB_PASSWORD=secret
 ```
@@ -34,10 +34,12 @@ DB_PASSWORD=secret
 
 - Áreas que precisam ser configuradas:
 ```
-Data Path
+# Data Path
 Choose storage path on your machine. For all storage systems.
-DATA_SAVE_PATH=~/.laradock/alabamaotsite
-PHP_FPM
+DATA_SAVE_PATH=~/.laradock/alabamanpc
+```
+```
+# PHP_FPM
 PHP_FPM_INSTALL_PGSQL=true
 ```
 ```
@@ -48,6 +50,13 @@ NGINX_HOST_LOG_PATH=./logs/nginx/
 NGINX_SITES_PATH=./nginx/sites/
 NGINX_PHP_UPSTREAM_CONTAINER=php-fpm
 NGINX_PHP_UPSTREAM_PORT=9000
+```
+```
+# POSTGRES
+POSTGRES_DB=alabamanpc
+POSTGRES_USER=default
+POSTGRES_PASSWORD=secret
+POSTGRES_PORT=5432
 ```
 
 4. **Comandos pasta Laradock**
