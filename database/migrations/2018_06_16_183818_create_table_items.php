@@ -13,7 +13,7 @@ class CreateTableItems extends Migration
      */
     public function up()
     {
-        //
+        DB::statement('CREATE TABLE items (name character varying, ids_array integer[])');
     }
 
     /**
@@ -23,6 +23,6 @@ class CreateTableItems extends Migration
      */
     public function down()
     {
-        //
+        DB::statement('DROP TABLE IF EXISTS items');
     }
 }
