@@ -5,7 +5,7 @@ Ele pega o arquivo map-spawn.otbm, gera a lista de monstros e o NPC que compra o
 
 ## [AlabamaOT.com](http://www.alabamaot.com/)
 
-![alt text](https://github.com/Acquati/alabamaot-site/blob/master/public/images/npc-creator.png)
+![alt text](https://github.com/Acquati/alabamaot-npccreator/blob/master/public/images/npc-creator.png)
 
 ## Instalação
 
