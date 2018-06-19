@@ -99,7 +99,7 @@ npm install holderjs
 npm run dev
 ```
 
-## Passos da criação do de um Projeto Laravel 5.6 com Laradock 7
+## Passos da criação de um Projeto Laravel 5.6 com Laradock 7
 
 1. **Laravel 5.6**
 
