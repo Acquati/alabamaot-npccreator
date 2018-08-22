@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableItems extends Migration
+class PopulateTableItemsXmlForgotten extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,9 @@ class CreateTableItems extends Migration
      */
     public function up()
     {
-        DB::statement('CREATE TABLE items (id serial, name character varying, ids_array integer[])');
+        $insertFile = './database/migrations/items_xml_forgotten.sql';
+
+        DB::unprepared(File::get($insertFile));
     }
 
     /**
@@ -23,6 +25,6 @@ class CreateTableItems extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS items');
+        DB::statement('DELETE FROM items_xml_forgotten');
     }
 }
