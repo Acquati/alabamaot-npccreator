@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Item extends Model
+class ItemWiki extends Model
 {
-    protected $table = 'items_xml_forgotten';
+    protected $table = 'items_wiki';
 
     public $timestamps = false;
 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTableItemsXmlForgotten extends Migration
+class CreateTableItemsWiki extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateTableItemsXmlForgotten extends Migration
      */
     public function up()
     {
-        DB::statement('CREATE TABLE items_xml_forgotten (id serial, name character varying, ids_string varchar(80))');
+        DB::statement('CREATE TABLE items_wiki (id serial, name character varying, ids_string varchar(80))');
     }
 
     /**
@@ -23,6 +23,6 @@ class CreateTableItemsXmlForgotten extends Migration
      */
     public function down()
     {
-        DB::statement('DROP TABLE IF EXISTS items_xml_forgotten');
+        DB::statement('DROP TABLE IF EXISTS items_xml_wiki');
     }
 }
